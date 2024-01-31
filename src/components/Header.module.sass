@@ -1,0 +1,26 @@
+.ham-btn
+    @apply sm:hidden flex w-[45px] h-[45px] flex-col aspect-square overflow-hidden justify-between px-[0.6rem] py-[0.8rem] items-start
+    span
+        display: block
+        border-radius: 20px
+        width: 100%
+        height: 2.6px
+        background-color: white
+        transition: transform 0.2s ease-in-out
+        transform-origin: center left
+        &:nth-child(1)
+            transform: scaleX(0.75)
+        &:nth-child(2)
+            transform-origin: center center
+            transform: scaleX(1)
+        &:nth-child(3)
+            transform: scaleX(0.5)
+
+.ham-btn--open
+    span
+        &:nth-child(1)
+            transform: rotate(44deg) scaleX(1) !important
+        &:nth-child(2)
+            transform: scaleX(0) !important
+        &:nth-child(3)
+            transform: rotate(-44deg) scaleX(1) !important
