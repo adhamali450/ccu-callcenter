@@ -3,7 +3,7 @@ import Hero from "@sections/Hero";
 import About from "@sections/About";
 import Tools from "@sections/Tools";
 import Packages from "@sections/Packages";
-import Contact from "@sections/contact/Contact";
+import Contact from "@sections/Contact/Contact";
 import Footer from "@components/Footer";
 import { Toaster } from "react-hot-toast";
 
