@@ -64,16 +64,16 @@ const Package = ({ className, features, name, include, execlude, popular }) => {
       className={`${className} flex flex-col items-center border-2 border-gray-400 basis-[100%] bg-gray-100`}
       style={{
         transform: popular ? "scale(1.02)" : "scale(0.95)",
-        borderColor: popular ? "#E64E36" : "rgb(156 163 175)",
-        backgroundColor: popular ? "#ffe8e5" : "rgb(243 244 246)",
+        borderColor: popular ? "#fe7aa9" : "rgb(156 163 175)",
+        backgroundColor: popular ? "#f1e0ee" : "#e4ecf6",
       }}
     >
       {popular && (
-        <span className="bg-[#ffccc4] text-brand-orange font-medium px-3 py-[2px] rounded-xl mb-3">
+        <span className="bg-[#fe7aa9] text-[rgba(0,0,0,0.7)] font-medium px-3 py-[2px] rounded-xl mb-3">
           Most popular
         </span>
       )}
-      <h3 className="fl-h3 uppercase font-extrabold text-centertext-gray-700">
+      <h3 className="fl-h3 uppercase font-extrabold text-center text-gray-700">
         {name}
       </h3>
       <hr className="mb-4 bg-black my-8" />

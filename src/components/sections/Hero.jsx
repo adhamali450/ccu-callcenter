@@ -1,6 +1,8 @@
 import Header from "@components/Header.jsx";
-import imgHome from "@assets/home-hero.webp";
 import Button from "@controls/Button.jsx";
+
+import imgHome from "@assets/home-hero.webp";
+import iconSign from "@assets/sign.svg";
 
 const Hero = () => {
   return (
@@ -10,20 +12,25 @@ const Hero = () => {
         src={imgHome}
         alt=""
       />
-      <div className="absolute w-full h-full inset-0 bg-brand-orange opacity-[55%] -z-[1] text-white"></div>
+      <div className="absolute w-full h-full inset-0 bg-brand-orange opacity-[65%] -z-[1] text-white"></div>
 
       <Header className="text-white" />
 
       <div className="container relative text-white py-[5rem] sm:py-[7rem] flex flex-col items-start">
-        <h5 className="fl-h5 font-semibold ">Bump up your business</h5>
+        <div className="flex items-center gap-1">
+          <img className="w-8" src={iconSign} alt="" />
+          <h5 className="fl-h5 font-semibold text-accent-color">
+            Bump up your business
+          </h5>
+        </div>
         <h1 className="fl-h1 font-semibold mt-1 mb-3">
-          Generate the
+          We Call, We Connect,
           <br />
-          <span className="font-black">HOTTEST</span> leads
+          We Close
         </h1>
-        <p className="fl-b font-semibold opacity-80">
-          Professionally Trained and Managed cold callers for your real estate
-          business
+        <p className="fl-b drop-shadow-sm opacity-80">
+          Professionally Trained and Managed Callers for Your Real Estate
+          Business
         </p>
         <Button
           base="link"

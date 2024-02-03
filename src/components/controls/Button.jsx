@@ -14,7 +14,7 @@ const Button = ({
     "bg-transparent border-white text-white hover:bg-white hover:text-brand-orange transition-colors";
   return base == "button" ? (
     <button
-      className={`${className} uppercase border-[3px] px-6 py-2 font-bold ${
+      className={`${className} uppercase border-[3px] px-6 py-2 font-semibold ${
         variant === "primary" ? primaryStyle : secondaryStyle
       }`}
       type={type}
@@ -24,7 +24,7 @@ const Button = ({
     </button>
   ) : (
     <a
-      className={`${className} uppercase border-[3px] px-6 py-2 font-bold ${
+      className={`${className} uppercase border-[3px] px-6 py-2 font-semibold ${
         variant === "primary" ? primaryStyle : secondaryStyle
       }`}
       {...link_misc}

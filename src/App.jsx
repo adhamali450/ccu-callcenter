@@ -7,7 +7,7 @@ import Contact from "@sections/Contact/Contact";
 import Footer from "@components/Footer";
 import { Toaster } from "react-hot-toast";
 
-import imgAgent from "@assets/agent-hero.webp";
+import imgAgent from "@assets/agent-hero-2.jpg";
 
 function App() {
   return (
@@ -19,15 +19,10 @@ function App() {
       />
 
       <Hero />
-
       <About />
-
       <Tools />
-
       <Packages />
-
       <Contact />
-
       <Footer />
 
       <Toaster position="bottom-center" reverseOrder={false} />

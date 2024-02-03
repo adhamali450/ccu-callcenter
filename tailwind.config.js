@@ -11,9 +11,13 @@ export default {
         xl: "1280px",
       },
       colors: {
-        "brand-orange": "#E64E36",
+        "brand-orange": "#112531",
+        "seconday-color": "#fe7aa9",
+        "accent-color": "#fe9236",
       },
     },
   },
   plugins: [],
 };
+
+// #112531

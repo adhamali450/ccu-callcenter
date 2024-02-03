@@ -1,47 +1,61 @@
+import Aside from "@controls/Aside";
+import AsideLayout from "@controls/AsideLayout";
+
+import iconTools from "@assets/tools.svg";
 import imgPropstream from "@assets/propstream.png";
 import imgXencall from "@assets/xencall.png";
 import imgAsana from "@assets/asana.png";
+import imgResimpli from "@assets/resimpli.png";
+import imgPodio from "@assets/podio.png";
 
 const Tools = () => {
-  const tools = [
+  const categories = [
     {
-      name: "Propstream",
+      title: "Propstream",
       description:
-        "Find potential deals by utilizing the most powerful real estate database on the market.PropStream puts the power of data & investor tools you need to pull targeted lists together for your Professional Caller to start generating leads from day one!",
-      img: imgPropstream,
+        "Utilize PropStream, the top real estate database, for deal discovery with essential data and tools, allowing for immediate lead generation by your Professional Caller through targeted lists.",
+      apps: [imgPropstream],
     },
     {
-      name: "Xencall",
+      title: "Xencall",
       description:
-        "Simple yet powerful dialer that includes numerous workflows for different sales call tasks, such as nurturing warm leads, while allowing your Professional Caller to auto-dial up to one-hundred calls per hour. ",
-      img: imgXencall,
+        "A versatile dialer with various sales call workflows, enabling automatic dialing of up to 100 calls per hour for nurturing warm leads.",
+      apps: [imgXencall],
     },
     {
-      name: "Asana",
+      title: "Manage your team's work, projects, & tasks online",
       description:
-        "Manage the wholesale lead process by organizing and tracking your deals inputted by your Quality Manager on the daily basis. After your leads are in the system, all you would have to do is follow up and take your deals to the finish line.",
-      img: imgAsana,
+        "Manage wholesale leads by organizing daily entries and following up to close deals.",
+      apps: [imgResimpli, imgPodio, imgAsana],
     },
   ];
-  return (
-    <section className="container pt-[4rem]" id="tools">
-      <h2 className="fl-h2">Effortless leads generation</h2>
 
-      <ul className="flex flex-col gap-8 mt-8">
-        {tools.map((tool, index) => (
+  return (
+    <AsideLayout className="container pt-[4rem]">
+      <Aside className="flex flex-col gap-1 justify-end bg-[#f1e0ee] h-[200px] lg:h-auto">
+        <div className="flex items-center gap-1">
+          <img className="w-8" src={iconTools} alt="" />
+          <p className="fl-b text-accent-color font-semibold">Our tools</p>
+        </div>
+        <h2 className="fl-h2">Effortless leads generation</h2>
+      </Aside>
+
+      <ul className="flex flex-col gap-8 py-0 lg:py-8">
+        {categories.map((cat, index) => (
           <li key={index}>
-            <div className="flex flex-col sm:flex-row items-center gap-6 lg:gap-8 text-center sm:text-left">
-              <img
-                className="w-[120px] lg:w-[150px]"
-                src={tool.img}
-                alt={`${tool.name} logo`}
-              />
-              <p className="fl-b max-w-[66ch]">{tool.description}</p>
+            <div className="flex flex-col gap-1">
+              <h4 className="fl-b font-semibold">{cat.title}</h4>
+              <p className="fl-b max-w-[66ch]">{cat.description}</p>
+              <div className="flex items-center gap-3 mt-1">
+                {cat.apps.map((app, i) => (
+                  <img className="h-[30px]" key={i} src={app} alt={cat.title} />
+                ))}
+              </div>
             </div>
           </li>
         ))}
       </ul>
-    </section>
+    </AsideLayout>
   );
 };
 

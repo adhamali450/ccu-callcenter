@@ -1,3 +1,5 @@
+import Aside from "@controls/Aside";
+
 import contactIcons from "@assets/contact";
 import imgContact from "@assets/agent-contact.webp";
 
@@ -37,12 +39,7 @@ const ContactInfo = () => {
   ];
 
   return (
-    <aside
-      className="relative lg:basis-1/3 rounded-lg md:rounded-xl text-white overflow-hidden p-4 md:p-6 lg:p-8 flex flex-col bg-cover bg-no-repeat bg-center"
-      style={{
-        backgroundImage: `url(${imgContact})`,
-      }}
-    >
+    <Aside className="text-white" backgroundImage={imgContact}>
       <div className="absolute inset-0 bg-brand-orange opacity-[65%]"></div>
 
       <div className="flex flex-col gap-6 lg:gap-10 h-full">
@@ -85,7 +82,7 @@ const ContactInfo = () => {
           </ul>
         </div>
       </div>
-    </aside>
+    </Aside>
   );
 };
 

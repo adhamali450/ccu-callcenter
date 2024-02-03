@@ -1,6 +1,7 @@
 import Form from "./Form";
 import ContactInfo from "./ContactInfo";
 import toast from "react-hot-toast";
+import AsideLayout from "@controls/AsideLayout";
 
 const Contact = () => {
   const formSubmittedHandler = (values) => {
@@ -10,16 +11,16 @@ const Contact = () => {
 
   return (
     <section className="container pt-[4rem]" id="contact">
-      <h2 className="fl-h2">Sold out? Let&apos;s get in touch</h2>
+      <h2 className="fl-h2">Let&apos;s Get in Touch!</h2>
 
-      <div className="flex flex-col lg:flex-row mt-8 gap-10">
+      <AsideLayout className="flex flex-col lg:flex-row gap-10 mt-8">
         <ContactInfo />
 
         <Form
           className="gap-4 mb-2 mr-2 grow"
           onFormSubmitted={formSubmittedHandler}
         />
-      </div>
+      </AsideLayout>
     </section>
   );
 };

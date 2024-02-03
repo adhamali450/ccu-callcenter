@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 const Header = ({ className }) => {
   return (
     <header
-      className={`${className} container relative flex flex-col sm:flex-row gap-3 sm:gap-0 justify-between items-center py-4`}
+      className={`${className} container relative flex flex-col sm:flex-row gap-5 sm:gap-0 justify-between items-center py-4`}
     >
       {/* Logo */}
       <div className="flex items-center gap-1 md:gap-2">
