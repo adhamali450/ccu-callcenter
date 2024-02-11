@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="flex flex-col plg:flex-row gap-6 justify-between items-center">
           <div className="flex items-center gap-2">
             <img className="w-10" src={logo} alt="Called callers united logo" />
-            <h3 className="fl-h3 uppercase font-black">Cold Callers United</h3>
+            <h3 className="fl-h3 uppercase font-semibold">CCU Call center</h3>
           </div>
 
           <ul className="flex items-center gap-5">
@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
         <hr className="my-8 opacity-60 bg-white h-[1.5px]" />
         <p className="fl-b opacity-[85%] text-center drop-shadow">
-          © 2024 Cold Callers United™. All Rights Reserved.
+          © 2024 CCU Call Center™. All Rights Reserved.
         </p>
       </div>
     </section>

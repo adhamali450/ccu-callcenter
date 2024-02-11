@@ -1,31 +1,24 @@
-import "./App.sass";
-import Hero from "@sections/Hero";
-import About from "@sections/About";
-import Tools from "@sections/Tools";
-import Packages from "@sections/Packages";
-import Contact from "@sections/Contact/Contact";
-import Footer from "@components/Footer";
-import { Toaster } from "react-hot-toast";
+import { lazy, Suspense } from "react";
+import { Route, Routes } from "react-router";
+import HomeRoute from "@routes/HomeRoute";
+const AdminRoute = lazy(() => import("@routes/AdminRoute"));
 
-import imgAgent from "@assets/agent-hero-2.jpg";
+import "./App.sass";
 
 function App() {
   return (
-    <div className="relative overflow-hidden">
-      <img
-        className="absolute hidden plg:block top-[130px] right-0 w-1/3 max-w-[500px] aspect-square rounded-l-3xl border-[4px] border-r-0 object-cover"
-        src={imgAgent}
-        alt="An image of call center agent"
-      />
-
-      <Hero />
-      <About />
-      <Tools />
-      <Packages />
-      <Contact />
-      <Footer />
-
-      <Toaster position="bottom-center" reverseOrder={false} />
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<HomeRoute />} />
+        <Route
+          path="/admin"
+          element={
+            <Suspense>
+              <AdminRoute />
+            </Suspense>
+          }
+        />
+      </Routes>
     </div>
   );
 }

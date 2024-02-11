@@ -19,14 +19,14 @@ const Hero = () => {
       <div className="container relative text-white py-[5rem] sm:py-[7rem] flex flex-col items-start">
         <div className="flex items-center gap-1">
           <img className="w-8" src={iconSign} alt="" />
-          <h5 className="fl-h5 font-semibold text-accent-color">
-            Bump up your business
-          </h5>
+          <p className="fl-h5 font-bold text-accent-color uppercase">
+            pump up your business
+          </p>
         </div>
         <h1 className="fl-h1 font-semibold mt-1 mb-3">
           We Call, We Connect,
           <br />
-          We Close
+          We Close.
         </h1>
         <p className="fl-b drop-shadow-sm opacity-80">
           Professionally Trained and Managed Callers for Your Real Estate

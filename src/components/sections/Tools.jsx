@@ -31,8 +31,8 @@ const Tools = () => {
   ];
 
   return (
-    <AsideLayout className="container pt-[4rem]">
-      <Aside className="flex flex-col gap-1 justify-end bg-[#f1e0ee] h-[200px] lg:h-auto">
+    <AsideLayout className="container pt-[4rem]" id="tools">
+      <Aside className="flex flex-col gap-1 justify-end border-[#f1e0ee] border-[3px] lg:bg-[#f1e0ee] lg:border-none">
         <div className="flex items-center gap-1">
           <img className="w-8" src={iconTools} alt="" />
           <p className="fl-b text-accent-color font-semibold">Our tools</p>
@@ -44,7 +44,7 @@ const Tools = () => {
         {categories.map((cat, index) => (
           <li key={index}>
             <div className="flex flex-col gap-1">
-              <h4 className="fl-b font-semibold">{cat.title}</h4>
+              <p className="fl-b font-semibold">{cat.title}</p>
               <p className="fl-b max-w-[66ch]">{cat.description}</p>
               <div className="flex items-center gap-3 mt-1">
                 {cat.apps.map((app, i) => (

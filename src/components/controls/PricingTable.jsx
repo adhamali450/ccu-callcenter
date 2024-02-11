@@ -10,7 +10,7 @@ const PricingTable = ({ className }) => {
     ["Quality assurance", packageFeatures["quality"]],
     ["Call recordings", packageFeatures["record"]],
     ["20 leads/month", packageFeatures["growth"]],
-    ["40-60 leads/month guranteed (worm/hot)", packageFeatures["growth"]],
+    ["40 leads/month guranteed (warm/hot)", packageFeatures["growth"]],
     ["Uploading leads to CRM", packageFeatures["upload"]],
     ["Standard support center", packageFeatures["support"]],
     ["VIP support center", packageFeatures["support"]],
@@ -19,22 +19,27 @@ const PricingTable = ({ className }) => {
     ["Bi-weekly training sessions", packageFeatures["training"]],
     ["Lead managers available with a discount", packageFeatures["discount"]],
     ["Closers available with a special deal", packageFeatures["deal"]],
+    [
+      "Helping you to pull and skip trace you first list",
+      packageFeatures["performance"],
+    ],
+    ["Dialer with rooting numbers", packageFeatures["dial"]],
   ];
 
   const packages = [
     {
       name: "silver",
-      include: [0, 2, 4, 5, 6, 8, 9],
+      include: [0, 2, 4, 5, 6, 8, 9, 16, 17],
       execlude: [1, 3, 7, 10],
     },
     {
       name: "gold",
-      include: [1, 3, 4, 5, 7, 8, 10],
+      include: [1, 3, 4, 5, 7, 8, 10, 16, 17],
       execlude: [0, 2, 6, 9],
     },
     {
       name: "elite",
-      include: [1, 3, 4, 5, 7, 8, 10, 11, 12, 13, 14, 15],
+      include: [1, 3, 4, 5, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17],
       execlude: [0, 2, 6, 9],
     },
   ];

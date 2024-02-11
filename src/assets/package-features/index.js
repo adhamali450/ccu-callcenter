@@ -10,6 +10,8 @@ import support from "./support.svg";
 import training from "./training.svg";
 import upload from "./upload.svg";
 import growth from "./growth.svg";
+import performance from "./performance.svg";
+import dial from "./dial.svg";
 
 const features = {
   clock: clock,
@@ -24,6 +26,8 @@ const features = {
   training: training,
   upload: upload,
   growth: growth,
+  performance: performance,
+  dial: dial,
 };
 
 export default features;

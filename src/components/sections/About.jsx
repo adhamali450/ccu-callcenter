@@ -2,12 +2,12 @@ import imgAgent from "@assets/agent-about.webp";
 import iconTeam from "@assets/icon-team.svg";
 import iconQuality from "@assets/icon-quality.svg";
 import iconReports from "@assets/icon-reports.svg";
-import circles from "@assets/circles.svg";
+import ellipses from "@assets/ellipses.svg";
 
 const About = () => {
   const benifits = [
     {
-      title: "50+ called caller",
+      title: "50+ trained callers",
       description:
         "We handle the whole process from pulling out the list to closing the deals for you, and so much more. ",
       img: iconTeam,
@@ -48,7 +48,7 @@ const About = () => {
         <div
           className="absolute  w-auto h-[130%] plg:w-1/2 plg:h-auto right-0 -z-30 translate-x-1/2 -translate-y-1/2 top-1/2 bg-no-repeat bg-cover bg-center aspect-square"
           style={{
-            backgroundImage: `url(${circles})`,
+            backgroundImage: `url(${ellipses})`,
           }}
         ></div>
 

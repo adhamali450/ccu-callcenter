@@ -1,6 +1,6 @@
 import PricingTable from "@controls/PricingTable";
 
-import circles from "@assets/circles.svg";
+import ellipses from "@assets/ellipses.svg";
 
 const Packages = () => {
   return (
@@ -9,7 +9,7 @@ const Packages = () => {
         <div
           className="absolute inset-0  bg-no-repeat opacity-30 -z-10"
           style={{
-            backgroundImage: `url(${circles})`,
+            backgroundImage: `url(${ellipses})`,
             backgroundPosition: "center",
             backgroundSize: "75%",
           }}

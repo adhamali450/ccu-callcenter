@@ -16,6 +16,7 @@ const Form = ({ className, onFormSubmitted }) => {
     validationSchema: contactSchema,
     onSubmit: (values) => {
       onFormSubmitted(values);
+
       formik.resetForm();
     },
   });

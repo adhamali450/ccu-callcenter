@@ -7,12 +7,8 @@ const ContactInfo = () => {
   const info = [
     [
       {
-        icon: contactIcons.location,
-        text: "AZ Zaytoun, Cairo, Egypt",
-      },
-      {
         icon: contactIcons.phone,
-        text: "(+20) 011 4395 4897",
+        text: "281-231-8875",
       },
       {
         icon: contactIcons.email,
@@ -60,7 +56,7 @@ const ContactInfo = () => {
         </div>
 
         <div className="relative">
-          <h4 className="fl-b font-semibold mb-2 lg:mb-4">Follow us</h4>
+          <p className="fl-b font-semibold mb-2 lg:mb-4">Follow us</p>
           <ul className="flex gap-2">
             {info[1].map(
               (i, index) =>

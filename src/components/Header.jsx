@@ -14,7 +14,7 @@ const Header = ({ className }) => {
           src={logo}
           alt="Called callers united logo"
         />
-        <h1 className="fl-h4 font-semibold">Cold Callers United</h1>
+        <h1 className="fl-h4 font-semibold uppercase">CCU Call center</h1>
       </div>
 
       {/* Desktop nav */}

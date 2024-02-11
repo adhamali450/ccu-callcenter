@@ -1,9 +1,10 @@
 import PropTypes from "prop-types";
 
-const AsideLayout = ({ className, children, style }) => {
+const AsideLayout = ({ className, id, children, style }) => {
   return (
     <div
       className={`${className} flex flex-col lg:flex-row gap-10 `}
+      id={id}
       style={style}
     >
       {children}
@@ -13,6 +14,7 @@ const AsideLayout = ({ className, children, style }) => {
 
 AsideLayout.propTypes = {
   className: PropTypes.string,
+  id: PropTypes.string,
   children: PropTypes.node,
   style: PropTypes.object,
 };
